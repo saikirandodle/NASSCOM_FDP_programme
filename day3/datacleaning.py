@@ -218,3 +218,12 @@ print(clean)
 # 3. value_counts()
 # YOUR CODE HERE
 print(clean.value_counts())
+
+
+# After all the steps above, here's the cleaned frame
+clean = df.drop(columns=['spend_capped'])
+print('Final shape:', clean.shape)
+print('Missing values:', int(clean.isna().sum().sum()))
+print('Duplicates    :', int(clean.duplicated().sum()))
+clean
+     
