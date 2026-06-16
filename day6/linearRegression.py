@@ -74,3 +74,7 @@ plt.ylabel("Score")
 plt.legend()
 plt.grid(True)
 plt.show()
+
+#find the model accuracy
+accuracy = model.score(X_test, y_test)
+print(f"Model Accuracy (R² Score): {accuracy:.2f}")
